@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Platform</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="start-screen" class="screen">
+        <h1>Welcome to the Quiz</h1>
+        <input type="text" id="username" placeholder="Enter your name">
+        <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <div id="quiz-screen" class="screen" style="display: none;">
+        <div id="timer">Time left: 03:00</div>
+        <h2 id="question">Question</h2>
+        <div id="options"></div>
+        <button id="next-btn" onclick="nextQuestion()" disabled>Next Question</button>
+    </div>
+
+    <div id="end-screen" class="screen" style="display: none;">
+        <h2>Quiz Finished!</h2>
+        <div id="score-display"></div>
+        <h3>Leaderboard</h3>
+        <ul id="leaderboard"></ul>
+      <!--<button onclick="restartQuiz()">Restart Quiz</button>-->
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
